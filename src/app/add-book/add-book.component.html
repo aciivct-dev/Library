@@ -1,0 +1,25 @@
+  <div>
+  <div>
+    <h3>Book Registration</h3>
+  </div>
+  <div>
+    <input type="text" [(ngModel)]="bookDetails.name" placeholder="BookName" />
+  </div>
+  <div>
+    <input
+      type="text"
+      [(ngModel)]="bookDetails.author"
+      placeholder="AuthorName"
+    />
+  </div>
+  <div>
+    <input
+      type="number"
+      [(ngModel)]="bookDetails.price"
+      placeholder="BookPrice"
+    />
+  </div>
+  <div>
+    <button (click)="addBook()">Add Book</button>
+  </div>
+</div>

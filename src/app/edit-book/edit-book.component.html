@@ -1,0 +1,26 @@
+<!-- {{id.id}} -->
+    <div *ngFor="let data of bookData">
+      <!-- {{id}} -->
+      <div *ngIf="data.id==id.id">
+
+      
+        <h3>Update Book</h3>
+        <div>
+            <input type="text" [(ngModel)]="data.name"  placeholder="Name">
+        </div>
+
+        <div>
+          <input type="text" [(ngModel)]="data.author"  placeholder="Author">
+        </div>
+
+        <div>
+          <input type="text" [(ngModel)]="data.price"  placeholder="Price">
+        </div>
+        <div>
+          <button (click)="updateBook(data.name,data.author,data.price,data.id)">Update Book</button>
+        </div>
+      </div>
+      </div>
+    
+
+        

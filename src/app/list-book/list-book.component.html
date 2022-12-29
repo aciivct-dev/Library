@@ -1,0 +1,32 @@
+
+
+<div>
+  <div *ngIf="Book.length ==0">
+    <p>No Books in the List</p>
+
+    <button routerLink="/Add">Add Book</button>
+  </div>
+</div>
+<div *ngIf="Book.length !=0">
+  <h4>List of Books</h4>
+  <div>
+    <table>
+      <tr>
+        <th scope="col">Book ID</th>
+        <th scope="col">Book Name</th>
+        <th scope="col">Author Name</th>
+        <th scope="col">Price</th>
+      </tr>
+      <tr *ngFor="let guide of Book">
+        <td>{{ guide.id }}</td>
+        <td>{{ guide.name }}</td>
+        <td>{{ guide.author }}</td>
+        <td>{{ guide.price }}</td>
+        <td>
+    <button routerLink="/Edit" [queryParams]={id:guide.id}>Edit</button></td>
+<td> <button (click)="deleteBook(guide.id)">Delete</button></td>
+</tr>
+</table>
+</div>
+
+

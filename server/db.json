@@ -1,0 +1,32 @@
+{
+  "books": [
+    {
+      "name": "ANSI C",
+      "author": "Ciril",
+      "price": 2000,
+      "id": 2
+    },
+    {
+      "name": "IoT",
+      "price": 1500,
+      "author": "camron",
+      "id": 3
+    },
+    {
+      "name": "AutoGear",
+      "price": 1233,
+      "author": "xyz",
+      "id": 4
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}
